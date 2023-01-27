@@ -32,11 +32,6 @@ public class Main {
             }
         }
 
-        private static void inputTask(Scanner scanner) {
-            System.out.print("Введите название задачи: ");
-            String taskName = scanner.next();
-            // todo
-        }
 
         private static void printMenu() {
             System.out.println("1. Добавить задачу \n" +
