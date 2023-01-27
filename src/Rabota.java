@@ -99,6 +99,7 @@ public class Rabota {
 
     // выбор повторяемости
     private static EnRepeatability inputRepeatability(Scanner scanner) {
+
         System.out.println("Введите частоту повторяемости задачи \n" +
                 "1 однократная \n" +
                 "2- ежедневная \n" +
@@ -115,22 +116,26 @@ public class Rabota {
 
     // ввод описания задачи
     public static String inputDescription(Scanner scanner) {
+
         System.out.println("Введите описание задачи");
         String description = scanner.next();
         if (description == null || !description.isBlank() || !description.isEmpty()) {
             throw new RuntimeException("введите описание задачи");
+        } else {
+            return description;
         }
-        return description;
+
     }
     // ввод названия задачи
 
     private static String inputTaskName(Scanner scanner) {
-        System.out.println("Введите название задачи ");
-        String taskName = scanner.next();
-        if (taskName == null || !taskName.isBlank() || !taskName.isEmpty()) {
-            throw new RuntimeException("введите название задачи");
-        }
-        return taskName;
+try {
+    System.out.println("Введите название задачи ");
+    String taskName = scanner.next();
+    return taskName;
+}catch (Exception e){
+    throw new RuntimeException(e);
+}
     }
 
     //контроль типа задачи
@@ -200,6 +205,9 @@ public class Rabota {
 
 
 
+//String tochka = data;
+//        tochka = tochka.replaceAll("[\\p{Punct}]", "");
+//        return tochka;
 //String tochka = data;
 //        tochka = tochka.replaceAll("[\\p{Punct}]", "");
 //        return tochka;

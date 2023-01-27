@@ -32,18 +32,12 @@ public class Main {
             }
         }
 
-        private static void inputTask(Scanner scanner) {
-            System.out.print("Введите название задачи: ");
-            String taskName = scanner.next();
-            // todo
-        }
 
         private static void printMenu() {
             System.out.println("1. Добавить задачу \n" +
                     "2. Удалить задачу \n" +
                     "3. Получить задачу на указанный день \n" +
-                    "4. Редактировать задачу \n" +
-                    "5. Вывести список задач \n" +
+                    "4. Вывести список задач \n" +
                     "0. Выход \n" +
                     "Выберите пункт меню: \n"
             );
