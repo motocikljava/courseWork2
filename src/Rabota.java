@@ -138,6 +138,8 @@ try {
 }
     }
 
+
+
     //контроль типа задачи
     public static boolean valType(int v) {
 
